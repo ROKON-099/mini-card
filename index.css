@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif
+}
+.navber{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color:whitesmoke;
+
+}
+.Logo{
+    color:blue;
+    font-size:1.5rem;
+    font-weight: semi-bold;
+    cursor:pointer;
+
+}
+.Nav-links{
+    display:flex;
+    list-style:none;
+    gap: 1rem;
+}
+.Nav-links li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.Nav-links li a:hover{
+    color:blue;
+}
+@media screen and (max-width: 768px) {
+    .navber{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top:10px;
+    }
+}
